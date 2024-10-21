@@ -77,7 +77,7 @@ class AppServiceProvider extends ServiceProvider
                 $trianglify = 'true';
                 $trianglify_seed = Setting::fetch('trianglify_seed');
             } elseif ($bg_image = Setting::fetch('background_image')) {
-                $alt_bg = ' style="background-image: url(storage/'.$bg_image.')"';
+                $alt_bg = ' style="background-image: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN); background-size: cover;"';
             }
 
             $allusers = User::all();
